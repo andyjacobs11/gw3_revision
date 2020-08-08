@@ -1,0 +1,637 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body {
+	background: #131022;
+}
+
+/******************** FLEX-GRID *********************/
+
+.flex-grid {
+	display: flex;
+}
+
+.sidebar {
+	flex: 1;
+}
+
+.main {
+	flex: 2;
+}
+
+/******************** END FLEX-GRID *********************/
+
+/*************** NAVIGATION ****************/
+
+.logo-center {
+	max-width: 100%;
+	text-align: center;
+}
+
+.logo#logo-home {
+	margin: 10px 0 20px 0;
+}
+
+.logo {
+	margin: 0 0 20px 0;
+}
+
+.logo-center:hover {
+	/* Switches to red logo on hover */
+	content: url('images/logo-red-center.png');
+}
+
+#logo-home:hover {
+	/* Switches to red logo on hover */
+		content: url('images/logo-red.png');
+}
+
+/*logo shake animation */
+
+img.rawr:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* end shake animation */
+
+nav {
+	font-family: lores-12, sans-serif;
+	font-size: 25px;
+	color: white;
+	margin: 40px 100px 0 40px;
+/*	float: left; */
+}
+
+div.slide nav{
+	margin: 0px 100px 0 40px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	margin: 15px 0;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #58D298;
+	text-decoration: underline;
+}
+
+nav a.active {
+	color: #58D298;
+	text-decoration: underline;
+}
+
+header#nav-home {
+	width: 35vw;
+}
+
+/*************** END NAVIGATION ****************/
+
+/******************** BODY *********************/
+
+main {
+	margin: 30px 0 0 0;
+}
+
+main#home {
+	margin: 0 0 0 0;
+}
+
+h1 {
+	font-family: lores-15, sans-serif;
+	font-size: 60px;
+	margin: 0px 0px 20px 0px;
+	color: white;
+}
+
+h2 {
+	font-family: lores-15, sans-serif;
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+	color: white;
+}
+
+div.slide h1 {
+/* 	margin: 40px 0 0 0; */
+}
+
+div.slide {
+	padding: 40px 0 0 0;
+}
+
+p {
+	font-family: lores-12, sans-serif;
+	font-size: 1.1rem;
+	color: white;
+}
+
+/***************** END BODY *********************/
+
+/***************** HOME SLIDE ONE ***************/
+
+div.s1content {
+	text-align: center;
+}
+
+main#home {
+	display: inline-flex;
+}
+
+p#scroll {
+	font-size: 1.5rem;
+}
+
+i#east {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  left: 5px;
+}
+
+div.s1content p {
+	display: inline;
+	margin: 0 1%;
+}
+
+div.vertical-center {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+/* right bounce: https://codepen.io/bright-digital/pen/KzgPry */
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+
+/* assign bounce */
+div#scroll-animation {
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+}
+
+/* end right bounce animation */
+
+/***************** END HOME SLIDE ONE ***************/
+
+/***************** DINO INFO SLIDES *****************/
+
+/*img.dino-image {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 5%;
+} */
+
+.two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.two div.dino-info {
+	width: 45vw;
+	margin: 50px 0 150px 0;
+	border-style: solid;
+	border: 3px solid #58D298;
+	padding: 2%;
+}
+
+div.dino-info p{
+	margin-bottom: 10px;
+}
+
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+	display: flex;
+	flex-direction: column;
+}
+
+img.brontosaurus {
+	width: 80%;
+}
+img.velociraptor {
+	width: 35%;
+}
+img.triceratops {
+	width: 35%;
+}
+img.allosaurus {
+	width: 60%;
+}
+img.baryonyx {
+	width: 55%;
+}
+img.tyrannosaurus {
+	width: 70%;
+}
+
+
+div.dino-info {
+	width: 45vw;
+	margin: 50px 0 0 5%;
+	border-style: solid;
+	border: 3px solid #58D298;
+	padding: 2%;
+}
+
+div.dino-position {
+	height: 100vw;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: flex-end;
+ 	justify-content: flex-end;
+	margin: 0 50px 80px 0;
+}
+
+/******************* END DINO INFO SLIDES **********************/
+
+/***** HORIZONTAL SCROLL LINK: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/ ******/
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.slide-dino {
+	width: 85vw;
+	height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+	width: 700vw;
+}
+
+.wrapper-characters {
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000vw;
+}
+
+.one#dinosaur-paddock-scroll {
+  background: #131022;
+	background-image: url("images/home-background.png");
+	background-repeat: no-repeat;
+  background-position: center bottom;
+	background-size: 85vw auto;
+}
+
+.two {
+  background: #131022;
+}
+.three {
+  background: #131022;
+}
+.four {
+  background: #131022;
+}
+.five {
+	background: #131022
+}
+.six {
+	background: #131022;
+}
+.seven {
+	background: #131022
+}
+.eight {
+	background: #131022;
+}
+.nine {
+	background: #131022
+}
+.ten {
+	background: #131022;
+}
+
+.wrapper {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.wrapper-characters {
+	transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.outer-wrapper-characters {
+	width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+/********** End Horizontal Scroll Code **************/
+
+/************* CHARACTERS PAGE *************/
+
+.wrapper#characters {
+  display: flex;
+  flex-direction: row;
+	width: 1000vw;
+}
+
+header#nav-characters {
+	width: 35vw;
+}
+
+.one#slide-characters {
+	background: #131022;
+	background-image: url("images/characters-background.png");
+	background-repeat: no-repeat;
+  background-position: center bottom;
+	background-size: 85vw auto;
+}
+
+main#main-characters {
+	display: inline-flex;
+}
+
+.quote{
+	font-weight: bold;
+}
+.person{
+	padding: 8%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 8%;
+	min-width: 400px;
+}
+
+.person p{
+	padding-bottom: 3%;
+}
+
+.person img{
+	max-width: 100%;
+	padding-top: 6%
+}
+.copy{
+	max-width: 45%;
+	border-style: solid;
+	border: 3px solid #58D298;
+	padding: 2%;
+	min-width: 400px;
+}
+article{
+	display: flex;
+	margin-bottom: 200px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/************ END CHARACTERS PAGE ***********/
+
+/******************* DINO GAME **********************/
+
+#game{
+/*   padding-top: 11%; */
+   font-family: lores-12, sans-serif;
+   font-size: 1rem;
+   color: #58D298;
+	 text-align: center;
+}
+
+#game p{
+		font-family: lores-12, sans-serif;
+		font-size: 1.1rem;
+   	text-align: center;
+		padding-bottom: 20px;
+}
+
+main#game {
+	margin: 40px 5% 0 0;
+}
+
+.game{
+   position: relative;
+   max-width: 95%;
+   margin: 10px auto;
+	 border: 2px solid #58D298;
+}
+.score,.hiscore{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+}
+
+.points,.hipoints{
+   min-width: 30px;
+   text-align: right;
+   display: inline-block;
+}
+.hiscore{
+   top: 30px;
+}
+.playagain{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%) translateY(-50%);
+/*   color: white; */
+	 color: #58D298;
+   padding: 10px 20px;
+/*   border: 2px solid #FFF; */
+	 border: 2px solid #58D298;
+   pointer-events: none;
+   transition: 1s all;
+}
+
+canvas{
+/*   background: rgba(0,0,0, 0.55); */
+	 background-color: #131022;
+	 display: block;
+   height: 100%;
+   width: 100%;
+/*   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); */
+   border-radius: 2px;
+   image-rendering: pixelated;
+}
+
+/******************* END DINO GAME **********************/
+
+/************** FOOTER **************/
+
+footer {
+	font-family: lores-12, sans-serif;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+footer img.jeep{
+	width: 22vw
+}
+
+footer div.sub-nav {
+	padding: 30px 0;
+	background-color: #58D298;
+}
+
+footer div.thanks-for-playing {
+	background-color: #58D298;
+}
+
+footer p{
+	padding: 30px 0;
+	font-size: 20px;
+	color: #131022;
+}
+
+footer ul li{
+	display: inline-flex;
+	margin: 0 30px;
+}
+
+footer a{
+	color: #131022;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+footer a.active{
+	text-decoration: underline;
+}
+
+/************** END FOOTER **************/
+
+/************* MEDIA QUERIES ****************/
+
+@media (max-width: 999px){
+	.logo{
+		display: none;
+	}
+}
+
+@media (min-width: 1000px){
+	.logo{
+		max-width: 250px;
+		text-align: left;
+	}
+}
+
+@media (min-width: 1000px){
+	.logo-center{
+		display: none;
+	}
+}
+
+@media (max-width: 700px){
+	#game p{
+			margin-top: 15%;
+			font-family: lores-12, sans-serif;
+			font-size: 1rem;
+	   	text-align: center;
+			padding-bottom: 3%;
+}

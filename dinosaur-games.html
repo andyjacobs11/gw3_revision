@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Jurassic Encounters</title>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://use.typekit.net/mki3aut.css">
+		<!-- Font for icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="flex-grid">
+
+			<header class="col sidebar">
+				<nav>
+					<a href="index.html">
+						<img src="images/logo.png" alt="Jurassic Encounters" class="logo rawr" id="logo-home" />
+						<img src="images/logo-center.png" alt="Jurassic Encounters" class="logo-center rawr" />
+					</a>
+					<ul>
+						<li><a href="index.html">Dinosaur Paddocks</a></li>
+						<li><a href="characters.html">Movie Characters</a></li>
+						<li><a href="dinosaur-games.html" class="active">Dino Game</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="col main" id="game">
+				<h1>Dino Game</h1>
+				<p>"You did it. You crazy son of a bitch, you did it." - Ian Malcolm</p>
+					<div class="game">
+	  				<canvas tabIndex="1"></canvas>
+	  				<div class="score">SC: <span class="points">0</span></div>
+	  				<div class="hiscore">HI: <span class="hipoints">0</span></div>
+	  				<div class="playagain">Click or Press a Key!</div>
+					</div>
+
+				<!-- Link for dinosaur game: https://codepen.io/sean_codes/pen/XRmryR -->
+
+		</main>
+
+		</div>
+
+		<footer>
+			<div class="thanks-for-playing">
+				<p>Thanks for playing!</p>
+			</div>
+		</footer>
+
+		<script src="js/game.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+
+</html>
